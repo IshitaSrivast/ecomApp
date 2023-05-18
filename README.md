@@ -1,13 +1,14 @@
 # ecomApp
 # How to run it locally?
-Clone the repository using ```git clone https://github.com/IshitaSrivast/ecomApp.git```
+Clone the repository: ```git clone https://github.com/IshitaSrivast/ecomApp.git```
 
 Change Directory: ```cd ecomApp```
 
 
-On your terminal, run
-````yarn```` or ```npm i``` to install the dependancies
-```npm start``` or ```yarn start``` to run the project locally
+Install Dependencies: ````yarn```` or ```npm i``` 
+
+
+Start: ```npm start``` or ```yarn start``` to run the project locally
 # Features and Structure
 
 ## Product Listing and Shopping Cart
