@@ -21,11 +21,11 @@ can add the product in the cart from the Add to Cart button. You can go the cart
 ```https://fakestoreapi.com/docs``` has been used to make the project realistic.  
 
 ## Asynchronous handling for API calls and loading screen
-The Loading component has been designed to 
+The Loading component serves the purpose of the loading screen. This can be viewed on the Home, Explore, and Search page.
 ## Search functionality
-The search results update based on the key input.
+The search results dynamically update based on the key input. This can be viewed on the search page.
 ## Pagination feature
-The pagination feature can be viewed on the Explore Page
+The pagination feature can be viewed on the Explore Page.
 ## State Management using Redux
 The state of the cart has been managed using Redux. Related code componenents can be found in the Redux folder
 
