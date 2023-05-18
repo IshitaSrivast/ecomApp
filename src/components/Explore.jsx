@@ -2,13 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import LoadingSpinner from './Loading';
 
-const LoadingComponent = () => {
-  return (
-    <div className="text-center">
-      <p>Loading...</p>
-    </div>
-  );
-};
 
 const ResultsComponent = () => {
   const [results, setResults] = useState([]);
@@ -20,6 +13,8 @@ const ResultsComponent = () => {
     fetchResults();
   }, []);
 
+
+  
   const fetchResults = async () => {
     try {
       const response = await fetch('https://fakestoreapi.com/products');
@@ -32,9 +27,7 @@ const ResultsComponent = () => {
     }
   };
 
-  const goToPage = (page) => {
-    setCurrentPage(page);
-  };
+ 
 
   const renderResults = () => {
     const startIndex = (currentPage - 1) * 4;

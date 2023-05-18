@@ -8,6 +8,8 @@ const Home = () => {
   const categories = ['jewelery', 'electronics', "men's clothing", "women's clothing"];
   const [isLoading, setIsLoading] = useState(false);
   let componentMounted = true
+  
+  
   useEffect(() => {
     const fetchSearchResults = async () => {
       setIsLoading(true)
@@ -32,19 +34,18 @@ const Home = () => {
 
 
   
-
+  //handle the change in slide for categories
   const handleSlideChange = (selectedIndex) => {
-    
     if(selectedIndex == 4){
         selectedIndex = 0;
     }
     if(selectedIndex == -1){
         selectedIndex = 3;
-    }
-
-    
+    }    
     setSelectedSlide(selectedIndex);
   };
+
+  //Loading Component
   const Loading = () =>{
     return(
       <>
@@ -55,7 +56,7 @@ const Home = () => {
   
   return (
     <div>
-      <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+      <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
         <div className="carousel-indicators">
           <button
             type="button"

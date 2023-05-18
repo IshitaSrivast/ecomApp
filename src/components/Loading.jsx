@@ -1,6 +1,6 @@
 import './../styles/Load.css';
 import React from 'react';
-
+//Loading Wheel
 const LoadingSpinner = () => {
   return (
     <div className="loading-spinner-container">

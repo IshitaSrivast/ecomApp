@@ -21,6 +21,8 @@ const Product = ({ products, category }) => {
     );
   };
 
+  
+
   const filteredProducts = category ? products.filter((item) => item.category === category) : prod;
   return (
     <div>

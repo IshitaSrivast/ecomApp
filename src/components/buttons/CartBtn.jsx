@@ -3,8 +3,7 @@ import { NavLink } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 
 const CartBtn = () => {
-    // We get a state of addItems
-    // Write the name of the file not the function
+    // We get a state of addItem which gives us the state of the cart
     const state = useSelector((state)=> state.addItem)
     return (
         <>

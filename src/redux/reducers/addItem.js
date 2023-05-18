@@ -1,18 +1,24 @@
 const addItem = [];
 
+
+
 const addItems = (state = addItem, action) => {
   const product = action.payload;
   switch (action.type) {
     case "ADDITEM":
       const exist = state.find((x) => x.id === product.id);
+      //checking if the item is present in the cart, if so, quantity increases by 1
+      //if not, the quantity is initaialized for the 
       if (exist) {
         return state.map((x) =>
           x.id === product.id ? { ...x, qty: x.qty + 1 } : x
         );
-      } else {
+      } 
+      else {
         const product = action.payload;
         return [
           ...state,
+          //creates a copy of the previous state and then updates the state
           {
             ...product,
             qty: 1,

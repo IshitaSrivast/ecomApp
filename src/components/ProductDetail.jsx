@@ -9,7 +9,8 @@ const ProductDetail = () => {
   const { id } = useParams();
   const [product, setProduct] = useState({});
   const [isLoading, setIsLoading] = useState(true);
-
+  
+  
   useEffect(() => {
     const fetchProductDetails = async () => {
       try {
@@ -26,8 +27,12 @@ const ProductDetail = () => {
     fetchProductDetails();
   }, [id]);
 
+
+
   const dispatch = useDispatch();
 
+
+  //adding or removing a product from cart
   const handleCart = (product) => {
     if (cartBtn === 'Add to Cart') {
       dispatch(addItem(product));
@@ -37,6 +42,7 @@ const ProductDetail = () => {
       setCartBtn('Add to Cart');
     }
   };
+
 
   return (
     <>

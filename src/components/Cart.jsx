@@ -8,18 +8,23 @@ import Product from "./Product";
 const Cart = () => {
   const state = useSelector((state) => state.addItem);
   const dispatch = useDispatch();
-
+  
+  //dispatching if the cross button is clicked
   const handleClose = (item) => {
     dispatch(delItem(item));
   };
-
+  
+  //dispatch when the plus button is pressed in cart to increase the quantity
   const handleCartPlus = (product) => {
     dispatch(addItem(product));
   };
+
+  //dispatch when the minus button is pressed in cart to decrease the quantity
   const handleCartMinus = (product) => {
     dispatch(delItem(product));
   };
 
+  //when the cart not empty
   const cartItems = (cartItem) => {
     return (
       <div>
@@ -72,6 +77,7 @@ const Cart = () => {
     );
   };
 
+  // when the cart is empty
   const emptyCart = () => {
     return (
       <div className="px-4 my-5 bg-light rounded-3 py-5">
@@ -83,6 +89,7 @@ const Cart = () => {
       </div>
     );
   };
+
 
   const button = () => {
     return (
