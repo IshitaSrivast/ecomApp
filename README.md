@@ -80,3 +80,25 @@ The Cart component conditionally renders the empty cart message, the individual 
 ## CheckOut
 The CheckOut component uses the useSelector hook from react-redux to access the state of the items added to the cart.
 The component initializes a total variable to keep track of the total price of the items in the cart.
+
+
+## Working Images
+#### Home
+![Home1](https://github.com/IshitaSrivast/ecomApp/blob/main/files/home1.png)
+
+![Home](https://github.com/IshitaSrivast/ecomApp/blob/main/files/Home.png)
+
+#### Explore
+![Explore](https://github.com/IshitaSrivast/ecomApp/blob/main/files/explore.png)
+
+#### Searching
+![Search](https://github.com/IshitaSrivast/ecomApp/blob/main/files/Search.png)
+
+#### Loading
+![Loading](https://github.com/IshitaSrivast/ecomApp/blob/main/files/loading.png)
+
+#### Product Details
+![Product Details](https://github.com/IshitaSrivast/ecomApp/blob/main/files/productDetails.png)
+
+#### Cart
+![Cart](https://github.com/IshitaSrivast/ecomApp/blob/main/files/cart.png)
